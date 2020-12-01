@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "antd/dist/antd.css";
 import PDtracker from "./PDtracker";
 import "antd/dist/antd.css";
 import "./main.css"
@@ -34,7 +33,7 @@ function Container() {
   // const [load,setLoad]=useState(null);
 //   const [profile, setProfile] = useState(false)
 //  function handler(){
-//   setProfile(true)    
+//   setProfile(true)
 //  }
   return (
     <div id="container">
@@ -255,7 +254,7 @@ function Main(prop) {
   ////////////following method is used to on off adButton
   function addCancelFunc() {
 
-    
+
     if (add === null) {
       setAdd("add");
       document.getElementById("addNew").textContent = "X";
@@ -270,14 +269,14 @@ function Main(prop) {
   const [showProfile, setShowProfile] = useState(false);
   const [showProfileId, setShowProfileId] = useState("");
 function profileHandler(e){
-  setShowProfile(!showProfile) 
+  setShowProfile(!showProfile)
    let editId = e.target.parentNode.parentNode.id;
     setShowProfileId(editId);
 
 }
 if(showProfile){
   return (<StudentProfile id={showProfileId } setShowProfile={setShowProfile} />);
-   
+
 }
 else
 {  return (

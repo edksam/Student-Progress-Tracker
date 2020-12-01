@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Table, Progress} from "antd";
-import ViewProfile from "./ViewProfile"
-import {InputForm} from "./InputForm"
+import { Table, Progress } from "antd";
+import ViewProfile from "./ViewProfile";
+import { InputForm } from "./InputForm";
 
 const StudentProfile = ({ id, setShowProfile }) => {
   const [studentProfile, setStudentProfile] = useState(null);
-    useEffect(() => {
+  useEffect(() => {
     console.log("Fetching data from heroku");
 
     fetch(`https://ontrack-team3.herokuapp.com/profile/student/${id}`)
@@ -44,7 +44,6 @@ const StudentProfile = ({ id, setShowProfile }) => {
               />
             );
           })}
-
         </>
       ),
     },
@@ -87,11 +86,14 @@ const StudentProfile = ({ id, setShowProfile }) => {
       dataIndex: "email",
       key: "email",
     },
-  
   ];
-  return (<><Table columns={columns} dataSource={studentProfile} />
-  <InputForm />
-  <ViewProfile />
-  <button onClick={() => setShowProfile(false)}>Back</button></>);
+  return (
+    <>
+      <Table columns={columns} dataSource={studentProfile} />
+      <InputForm />
+      <ViewProfile />
+      <button onClick={() => setShowProfile(false)}>Back</button>
+    </>
+  );
 };
 export default StudentProfile;

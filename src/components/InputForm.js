@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Row, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
 import Axios from "axios";
+import "./inputform.css";
 
- export const InputForm = () => {
+export const InputForm = () => {
   const initialInputState = { name: "", message: "" };
   const [newMessage, setNewMessage] = useState(initialInputState);
 
