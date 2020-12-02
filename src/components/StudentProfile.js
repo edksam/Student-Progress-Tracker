@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Table, Progress } from "antd";
+import "../index.css";
 import ViewProfile from "./ViewProfile";
 import { InputForm } from "./InputForm";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Table, Tag, Space } from "antd";
 import "antd/dist/antd.css";
-import "../index.css";
+// import "../index.css";
 // import pd-fake-data.json from "./pd-fake-data.json"
 
 const PDTracker = () => {

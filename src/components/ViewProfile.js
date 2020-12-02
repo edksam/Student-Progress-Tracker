@@ -39,11 +39,7 @@ class ViewProfile extends React.Component {
             <List.Item
               key={item.id}
               actions={[
-                <a
-                  href="https://google.com"
-                  onClick={this.showDrawer}
-                  key={`a-${item.id}`}
-                >
+                <a href="#" onClick={this.showDrawer} key={`a-${item.id}`}>
                   View Profile
                 </a>,
               ]}
@@ -52,7 +48,11 @@ class ViewProfile extends React.Component {
                 avatar={
                   <Avatar src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png" />
                 }
-                title={<a href="https://ant.design/index-cn">{item.name}</a>}
+                title={
+                  <a href="https://debug-me-if-you-can-studentprofile.netlify.app/">
+                    {item.name}
+                  </a>
+                }
                 description="CodeYourFuture WM class-1"
               />
             </List.Item>
