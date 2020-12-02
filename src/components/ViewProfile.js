@@ -1,7 +1,7 @@
 import React from "react";
 import "antd/dist/antd.css";
 import "./viewprofile.css";
-import { Drawer, List, Avatar, Divider, Col, Row } from "antd";
+import { Drawer, List, Avatar, Divider, Col, Row, Button } from "antd";
 
 const DescriptionItem = ({ title, content }) => (
   <div className="site-description-item-profile-wrapper">
@@ -39,9 +39,9 @@ class ViewProfile extends React.Component {
             <List.Item
               key={item.id}
               actions={[
-                <a href="#" onClick={this.showDrawer} key={`a-${item.id}`}>
+                <Button type="primary" onClick={this.showDrawer} key={`a-${item.id}`}>
                   View Profile
-                </a>,
+                </Button>,
               ]}
             >
               <List.Item.Meta

@@ -90,7 +90,12 @@ const StudentProfile = ({ id, setShowProfile }) => {
   ];
   return (
     <>
-      <Table columns={columns} dataSource={studentProfile} />
+      <Table
+        columns={columns}
+        dataSource={studentProfile}
+        size="large"
+        pagination={false}
+      />
       <InputForm />
       <ViewProfile />
       <button onClick={() => setShowProfile(false)}>Back</button>
