@@ -31,7 +31,7 @@ class ViewProfile extends React.Component {
         <List
           dataSource={[
             {
-              name: "Berhane",
+              name: "Muoi Cary",
             },
           ]}
           bordered
@@ -74,12 +74,12 @@ class ViewProfile extends React.Component {
           <p className="site-description-item-profile-p">Personal</p>
           <Row>
             <Col span={12}>
-              <DescriptionItem title="Full Name" content="Berhane" />
+              <DescriptionItem title="Full Name" content="Muoi Cary" />
             </Col>
             <Col span={12}>
               <DescriptionItem
                 title="Account"
-                content="mail2berhane@gmail.com"
+                content="mcary@gmail.com"
               />
             </Col>
           </Row>
@@ -108,7 +108,7 @@ class ViewProfile extends React.Component {
             </Col>
           </Row>
           <Divider />
-          <p className="site-description-item-profile-p">Company</p>
+          <p className="site-description-item-profile-p">School</p>
           <Row>
             <Col span={12}>
               <DescriptionItem title="Position" content="Student" />
@@ -140,7 +140,7 @@ class ViewProfile extends React.Component {
           <p className="site-description-item-profile-p">Contacts</p>
           <Row>
             <Col span={12}>
-              <DescriptionItem title="Email" content="mail2berhane@gmail.com" />
+              <DescriptionItem title="Email" content="Muoi Cary" />
             </Col>
             <Col span={12}>
               <DescriptionItem title="Phone Number" content="+44 12345678" />
